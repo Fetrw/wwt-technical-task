@@ -19,7 +19,7 @@ export const App: React.FC = () => {
 	useEffect(() => {
 		const fetchFilters = async () => {
 			try {
-				const response = await fetch('/src/temp/filterData.json')
+				const response = await fetch('/filterData.json')
 				if (!response.ok) {
 					throw new Error('Failed to fetch filter data')
 				}
